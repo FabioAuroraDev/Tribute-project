@@ -1,0 +1,45 @@
+
+.frame {
+    position: relative;
+    font-size: 0;
+}
+
+.frame::before, .frame::after {
+    position: absolute;
+    border-style: solid;
+    border-color: #ddd7d7;
+    border-radius: 10%;
+    content: "";
+}
+
+.frame::before {
+    top: 1px;
+    right: -10px;
+    bottom: 1px;
+    left: -10px;
+    border-width: 2px 0 2px 0;
+}
+
+.frame::after {
+    top: -10px;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+    border-width: 0 2px 0 2px;
+}
+
+/* .frame::before {
+    top: 1px;
+    right: -15px;
+    bottom: 1px;
+    left: -15px;
+    border-width: 2px 2px 2px 2px;
+}
+
+.frame::after {
+    top: -15px;
+    right: 0;
+    bottom: -15px;
+    left: 0;
+    border-width: 2px 2px 2px 2px;
+} */
